@@ -1,7 +1,7 @@
 # Proyecto_Final_Bussines_Analytics
 # Kuska Perú Travel - Turismo Receptivo: Destinos Sub Posicionados (Caso B)
  
-![Logo de Kuska Perú Travel](docs/img/logo.png)
+![Logo de Kuska Perú Travel](Logo%20de%20Kuska%20Per%C3%BA%20Travel.jpg)
  
 Kuska Perú Travel, es una agencia de turismo cuya misión es dar a conocer las maravillas ocultas del Perú y conectar las expectativas de la demanda turística con destinos regionales con alto potencial pero baja visibilidad. Sin embargo, surgen dudas del porqué son hoy gemas ocultas, no hay industria hotelera, es de difícil acceso, no hay interés, o los sitios arqueológicos no están desarrollados.
  
