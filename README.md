@@ -37,4 +37,23 @@ Se medirán con los siguientes KPIs:
 - **Carpeta con datasets:** [Google Drive](https://drive.google.com/drive/folders/1oaP0pYr8mZoDCWX68915ZwGL0ABpumW-?usp=drive_link)
 - **Google Colab:** [Notebook del proyecto](https://colab.research.google.com/drive/1BQuwUZbjUqyXzoiKWywTyebogANFLUIH?usp=drive_link)
 - **Encuesta:** [Formulario](https://forms.gle/NodBfNj7eSTFd4oeA)
+
+## Plan Semana 7 – Semana 14 (Plan PC2)
+ 
+Para la Entrega 2 se planea ampliar las respuestas válidas de la encuesta a un rango de **80 a 100**, y sumar un nuevo análisis de enriquecimiento  incorporando la **distribución de sitios arqueológicos con data de PROMPERÚ**, cruzada con las regiones del dataset base de MINCETUR. Ambas acciones se ubican al inicio del plan porque son insumo de todo lo que sigue. 
+ 
+| # | Semana | Actividad |
+|---|---|---|
+| 1 | 7 | Cierre de campo de la encuesta: ampliar de 41 a 80-100 respuestas válidas antes de continuar con el análisis. |
+| 2 | 7 | Descargar e integrar el dataset de sitios arqueológicos de PROMPERÚ (Vía 2), normalizar la llave región y reportar la tasa de cruce con MINCETUR. |
+| 3 | 8 | Análisis de correlación (heatmap) entre habitaciones, arribos, pernoctaciones y permanencia — insumo directo para la regresión. |
+| 4 | 8 | Regresión de pernoctaciones (Pregunta 2): ajuste del modelo e interpretación de coeficientes en lenguaje de negocio. |
+| 5 | 9 | Gráfico de evolución 2019-2025 (arribos y %TNOH por año) para visualizar la caída de 2020 por región. |
+| 6 | 9 | Descomposición de la serie de tiempo: tendencia, estacionalidad y residuo. |
+| 7 | 10 | Forecasting de recuperación por región (Pregunta 4) y cálculo del KPI "Grado de Recuperación Post-Pandemia". |
+| 8 | 11 | Clustering con los 3 ejes de segmentación: Índice de Subposicionamiento, atractivo cultural (sitios arqueológicos PROMPERÚ) y accesibilidad/costo (Pregunta 3). |
+| 9 | 12 | Nombrar y perfilar los segmentos con criterio de negocio; recalcular la tabla de "Oportunidad Prioritaria" incorporando el nuevo eje cultural. |
+| 10 | 13 | Construcción del dashboard interactivo en Power BI con los hallazgos completos. |
+| 11 | 13 | Redacción del informe escrito final (máx. 8 páginas) y armado de la presentación ejecutiva (10-12 slides). |
+| 12 | 14 | **Solo revisión:** coherencia entre cada modelo y su recomendación, ensayo de la sustentación, verificación de que cada integrante explica su tramo, entrega de datos crudos/limpios y bitácora de IA actualizada. |
  
