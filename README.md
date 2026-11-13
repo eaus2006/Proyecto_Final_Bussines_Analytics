@@ -1,59 +1,58 @@
-# Proyecto_Final_Bussines_Analytics
-# Kuska Perú Travel - Turismo Receptivo: Destinos Sub Posicionados (Caso B)
- 
-![Logo de Kuska Perú Travel](Logo%20de%20Kuska%20Per%C3%BA%20Travel.jpg)
- 
-Kuska Perú Travel, es una agencia de turismo cuya misión es dar a conocer las maravillas ocultas del Perú y conectar las expectativas de la demanda turística con destinos regionales con alto potencial pero baja visibilidad. Sin embargo, surgen dudas del porqué son hoy gemas ocultas, no hay industria hotelera, es de difícil acceso, no hay interés, o los sitios arqueológicos no están desarrollados.
- 
-## Problema de negocio
- 
-¿En qué regiones del Perú debería Kuska Perú Travel concentrar su inversión promocional del próximo año, priorizando aquellas donde la capacidad hotelera ociosa coincide con atractivo turístico comprobado y bajas barreras de acceso o costo?
- 
-## Alcance actual del Proyecto
- 
-El proyecto ha desarrollado un EDA inicial combinando la data rescatada del Mincetur, la cual evalúa los principales indicadores de ocupabilidad mensual en las diferentes regiones del país entre 2019 y 2025. Además se exploró los datos similares de Promperú, no obstante se empleó el dataset del MINCETUR dado que Promperú trabajó con cifras anuales o mensuales sin diferenciar las regiones, lo cual complicaba el análisis. (Visualizar Anexo B)
- 
-Por otro lado se elaboró una encuesta para ahondar en el comportamiento de los diferentes posibles turistas y su posible apertura a adoptar nuevos destinos teniendo en cuenta las limitantes o barreras que pondrían frente a la opción de conocer destinos diferentes.
- 
-Todo este análisis busca responder las siguientes preguntas:
- 
-1. ¿Qué regiones tienen alta capacidad instalada (oferta hotelera) pero bajo flujo de visitantes?
-2. ¿Qué variables explican el volumen de pernoctaciones de una región?
-3. ¿Qué tipologías de destino emergen al cruzar capacidad instalada, flujo real y estancia promedio?
-4. ¿Cómo se recuperó cada región tras la caída de 2020 y qué tan cerca está de su tendencia pre-pandemia?
-5. ¿La intención de viaje declarada en la encuesta para las regiones "alta capacidad-bajo flujo" es consistente con la oferta hotelera real de esas regiones, o hay un desfase entre interés potencial y capacidad instalada?
-Se medirán con los siguientes KPIs:
- 
-| KPI (Nombre Claro) | ¿Qué significa en simple? | ¿Cómo se calcula? | ¿Para qué le sirve a PROMPERÚ / Agencia? |
-|---|---|---|---|
-| **1. Porcentaje de Capacidad Ociosa** | El porcentaje de habitaciones de hotel que se quedan vacías cada mes. | 100% − Tasa de Ocupación | Identifica qué regiones tienen cuartos de sobra sin usar. Por ejemplo, en Cajamarca el 83% de las camas están vacías al mes (100% − 17%). |
-| **2. Relación Interés vs. Ocupación** | Compara cuánta gente dice que quiere ir frente a cuánta gente realmente va. | % de personas interesadas (encuesta) ÷ % de ocupación real (MINCETUR) | Detecta "joyas desaprovechadas". Si Amazonas tiene 68% de interés en la encuesta pero solo 20% de ocupación en MINCETUR, el ratio es 3.4 (altísimo descalce que justifica hacer publicidad ya). |
-| **3. Dependencia del Turismo Nacional** | Qué porcentaje de todos los visitantes que llegan son peruanos y no extranjeros. | (Arribos Nacionales ÷ Total de Arribos) × 100 | Dice a quién dirigir la publicidad. Si regiones como Huancavelica o Cajamarca tienen 98%–99% de nacionales, la campaña debe ser local/interna, no internacional. |
-| **4. Grado de Recuperación Post-Pandemia** | Qué tan cerca está hoy el departamento del nivel de turistas que recibía en 2019. | (Arribos actuales [2024−2025] ÷ Arribos en 2019 [pre-covid]) × 100 | Muestra si una región está estancada o si ya rebotó, ayudando a decidir si la inversión es para "reactivar" o para "acelerar". |
-| **5. Noches de Estadía por Habitación** | Cuántas noches de hospedaje se generan efectivamente por cada habitación disponible. | Total de Pernoctaciones ÷ Número de Habitaciones | Mide la rentabilidad y el movimiento económico del hospedaje: a más noches por cuarto, mayor gasto deja el turista en el destino. |
- 
+<p align="center">
+  <img src="Logo%20de%20Kuska%20Per%C3%BA%20Travel.jpg" alt="Logo de Kuska Perú Travel" width="220">
+</p>
+
+<h1 align="center">Kuska Perú Travel</h1>
+<h3 align="center">Destinos subposicionados del turismo receptivo en el Perú</h3>
+
+<p align="center">
+  Proyecto final · AD3010 Business Analytics · Caso B<br>
+  Integrantes: Dayra Barboza, Isabella Castillo, Isabella Romero, Maria Fernanda Torres,Eurymar Umbria y Andrea Vera
+</p>
+
+## Resumen
+
+Kuska Perú Travel es una agencia ficticia cuya misión es dar a conocer las maravillas ocultas del Perú. El proyecto identifica en qué departamentos conviene concentrar la inversión promocional del próximo año: aquellos con capacidad hotelera ociosa, interés real de los viajeros y barreras de acceso o costo manejables.
+
+**Pregunta de negocio:** ¿En qué regiones del Perú debería Kuska Perú Travel concentrar su inversión promocional del próximo año, priorizando aquellas donde la capacidad hotelera ociosa coincide con atractivo turístico comprobado y bajas barreras de acceso o costo?
+
+## Recomendación
+
+Concentrar la inversión en **Amazonas, Ayacucho y Cajamarca**. Son los tres departamentos con mayor interés declarado en la encuesta y baja ocupación hotelera real, y se mantienen en el top 5 en el 100% de las simulaciones de pesos del score de oportunidad. La Libertad y Huancavelica completan el top 5, con menor solidez.
+
+- **Producto:** paquetes que incluyan transporte y alojamiento, porque las barreras más mencionadas son seguridad, poca oferta de alojamiento y dificultad para llegar.
+- **Alojamiento:** negociar bloqueos hoteleros o tarifas corporativas con establecimientos locales, aprovechando una capacidad ociosa superior al 80%.
+- **Calendario:** lanzar preventas en enero y febrero, antes de los meses de menor demanda (abril a junio).
+
+## Qué responde el análisis
+
+| Pregunta | Hallazgo principal |
+|---|---|
+| 1. ¿Qué regiones tienen alta capacidad pero bajo flujo? | Loreto, Cajamarca, La Libertad y Lambayeque reciben menos visitantes de los que su capacidad instalada permitiría (Índice de Subposicionamiento menor a 1). |
+| 2. ¿Qué variables explican las pernoctaciones? | La escala de la oferta domina: un 1% más de habitaciones se asocia a un 1.45% más de pernoctaciones. Tener sitios arqueológicos o museos, por sí solo, no explica más demanda. |
+| 3. ¿Qué tipologías de destino emergen? | Cinco segmentos, desde destinos consolidados (Cusco, Lima) hasta destinos con capacidad media y flujo bajo o medio donde se concentra la oportunidad. |
+| 4. ¿Cómo se recuperó cada región tras 2020? | Los departamentos más rezagados (La Libertad, Loreto, Apurímac y Ayacucho) no recuperan el nivel de 2019 en los próximos 12 meses según el pronóstico. |
+| 5. ¿El interés declarado es consistente con la oferta real? | Sí. Amazonas, Cajamarca y Ayacucho combinan alto interés y baja ocupación real. |
+
+## Datos y método
+
+- **MINCETUR:** indicadores mensuales de ocupación hotelera por departamento, 2019 a junio 2025, calibrados con las cifras anuales oficiales.
+- **Encuesta propia:** 110 respuestas válidas sobre disposición, interés y barreras de viaje.
+- **Ministerio de Cultura y PROMPERÚ:** visitas a sitios arqueológicos y museos, como enriquecimiento.
+- **Técnicas:** Índice de Subposicionamiento, regresión log-log, descomposición y pronóstico de series de tiempo, clustering K-Means y un score de oportunidad con análisis de sensibilidad.
+
+Se miden cinco KPIs: capacidad ociosa, relación interés vs. ocupación, dependencia del turismo nacional, grado de recuperación post-pandemia y noches de estadía por habitación.
+
+## Contenido del repositorio
+
+- **Notebook:** análisis completo y reproducible, de la limpieza de datos al dashboard.
+- **Dashboard interactivo:** cinco gráficos, uno por pregunta de negocio, generado con D3.
+- **Informe final y presentación:** documentos de entrega.
+- **Anexos:** fuentes de datos, acta de reparto, encuesta y bitácora de uso de IA.
+- **Datasets:** datos originales y procesados.
+
 ## Respaldo del trabajo
- 
+
 - **Carpeta con datasets:** [Google Drive](https://drive.google.com/drive/folders/1oaP0pYr8mZoDCWX68915ZwGL0ABpumW-?usp=drive_link)
 - **Google Colab:** [Notebook del proyecto](https://colab.research.google.com/drive/1BQuwUZbjUqyXzoiKWywTyebogANFLUIH?usp=drive_link)
 - **Encuesta:** [Formulario](https://forms.gle/NodBfNj7eSTFd4oeA)
-
-## Plan Semana 7 – Semana 14 (Plan PC2)
- 
-Para la Entrega 2 se planea ampliar las respuestas válidas de la encuesta a un rango de **80 a 100**, y sumar un nuevo análisis de enriquecimiento  incorporando la **distribución de sitios arqueológicos con data de PROMPERÚ**, cruzada con las regiones del dataset base de MINCETUR. Ambas acciones se ubican al inicio del plan porque son insumo de todo lo que sigue. 
- 
-| # | Semana | Actividad |
-|---|---|---|
-| 1 | 7 | Cierre de campo de la encuesta: ampliar de 41 a 80-100 respuestas válidas antes de continuar con el análisis. |
-| 2 | 7 | Descargar e integrar el dataset de sitios arqueológicos de PROMPERÚ (Vía 2), normalizar la llave región y reportar la tasa de cruce con MINCETUR. |
-| 3 | 8 | Análisis de correlación (heatmap) entre habitaciones, arribos, pernoctaciones y permanencia — insumo directo para la regresión. |
-| 4 | 8 | Regresión de pernoctaciones (Pregunta 2): ajuste del modelo e interpretación de coeficientes en lenguaje de negocio. |
-| 5 | 9 | Gráfico de evolución 2019-2025 (arribos y %TNOH por año) para visualizar la caída de 2020 por región. |
-| 6 | 9 | Descomposición de la serie de tiempo: tendencia, estacionalidad y residuo. |
-| 7 | 10 | Forecasting de recuperación por región (Pregunta 4) y cálculo del KPI "Grado de Recuperación Post-Pandemia". |
-| 8 | 11 | Clustering con los 3 ejes de segmentación: Índice de Subposicionamiento, atractivo cultural (sitios arqueológicos PROMPERÚ) y accesibilidad/costo (Pregunta 3). |
-| 9 | 12 | Nombrar y perfilar los segmentos con criterio de negocio; recalcular la tabla de "Oportunidad Prioritaria" incorporando el nuevo eje cultural. |
-| 10 | 13 | Construcción del dashboard interactivo en Power BI con los hallazgos completos. |
-| 11 | 13 | Redacción del informe escrito final (máx. 8 páginas) y armado de la presentación ejecutiva (10-12 slides). |
-| 12 | 14 | **Solo revisión:** coherencia entre cada modelo y su recomendación, ensayo de la sustentación, verificación de que cada integrante explica su tramo, entrega de datos crudos/limpios y bitácora de IA actualizada. |
- 
