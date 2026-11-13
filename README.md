@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="Logo%20de%20Kuska%20Per%C3%BA%20Travel.jpg" alt="Logo de Kuska Perú Travel" width="220">
+  <img src="Logo%20de%20Kuska%20Per%C3%BA%20Travel.jpg" alt="Logo de Kuska Perú Travel" width="600">
 </p>
-
 <h1 align="center">Kuska Perú Travel</h1>
-<h3 align="center">Destinos subposicionados del turismo receptivo en el Perú</h3>
+<h3 align="center">Destinos subposicionados del turismo receptivo en el Perú</h4>
+
 
 <p align="center">
-  Proyecto final · AD3010 Business Analytics · Caso B<br>
+  Proyecto final · Caso B<br>
   Integrantes: Dayra Barboza, Isabella Castillo, Isabella Romero, Maria Fernanda Torres,Eurymar Umbria y Andrea Vera
 </p>
 
